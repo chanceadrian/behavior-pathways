@@ -8,6 +8,7 @@ body {
     color:#1D1F1D;
     display: flex;
     flex-direction: column;
+    background-color: ;
 }
 
 .navigation {
@@ -59,7 +60,7 @@ body {
 }
 
 .navigation-2 {
-    display: flex;
+    display: none;
     flex-direction: row;
     padding-inline: 5%;
     align-items: center;
@@ -154,6 +155,10 @@ body {
 }
 
 @media (max-width: 800px) {
+    .navigation-2 {
+        display: flex;
+    }
+    
     .navigation {
         padding-inline: 5%;
     }
