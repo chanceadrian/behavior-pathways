@@ -74,7 +74,7 @@ body {
     bottom: 0;
     width: 100%;
     box-sizing: border-box; 
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav-button-2 {
