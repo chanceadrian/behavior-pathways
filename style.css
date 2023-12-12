@@ -183,7 +183,7 @@ body {
     line-height: clamp(21px, 4vw, 30px);
     font-weight: 500;
     width: 65%;
-    margin-bottom: clamp(16px,5vw,66px);  
+    margin-bottom: clamp(16px,7vw,84px);  
 }
 
 .work-preview {
