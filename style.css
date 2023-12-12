@@ -393,6 +393,9 @@ body {
         height: fit-content;
     }
 
+    .title {
+        margin-bottom: 32px;
+    }
     .body, .body-2 {
         width: 100%;
     }
