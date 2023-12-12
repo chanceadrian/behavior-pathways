@@ -463,4 +463,8 @@ body {
         margin-top: 16px;
         width: 100%;
     }
+
+    .blog-page {
+        padding-bottom: 7%;
+    }
 }
