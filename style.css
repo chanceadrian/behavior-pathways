@@ -460,7 +460,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: clamp(20px, 10vw, 60px);
+    padding: clamp(16px, 10vw, 60px);
     gap: clamp(32px, 10vw, 100px);
     text-align: left;
     justify-content: flex-start;
@@ -498,10 +498,12 @@ body {
 .s-service-body ol {
     list-style-type: decimal;
     margin-left: 16px; 
+    box-sizing: border-box;
 }
 
 .s-service-body li {
     margin-bottom: 8px; 
+    box-sizing: border-box;
 }
 
 .s-title-line {
