@@ -75,7 +75,7 @@ small {
 .resources-section {
     padding-block: 100px;
     padding-bottom: 32px;
-    padding-inline: 15%;
+    padding-inline: 14%;
     background: linear-gradient(180deg, #ffffff 0%, #EFF4EE 20%);
     min-width: 1250px;
     justify-self: center;
@@ -261,12 +261,18 @@ article span {
     .grid-3 {
         grid-template-columns: 1fr;
     }  
+
+    .s-service {
+        width: 100vw;
+        min-width: 100vw;
+        max-width: 100vw;
+    }
 }
 
 .navigation {
     display: flex;
     flex-direction: row;
-    padding-inline: 15%;
+    padding-inline: 14%;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(66, 89, 63, 0.85);
@@ -851,6 +857,15 @@ b {
     margin-top: 16px;
 }
 
+@media (max-width: 400px) {
+    .s-service {
+        width: 100vw;
+        min-width: 100vw;
+        max-width: 100vw;
+        border-radius: 0;
+    }
+}
+
 @media (max-width: 1030px) {
     body {
         margin-bottom: 52px;
@@ -950,7 +965,7 @@ b {
         padding-bottom: 14px;
     }
 
-    .body, .body-2, .about-photo, .s-body, .s-service, .s-service-title, .s-title-line, .s-service-body, .s-section-3, .s-next-body {
+    .body, .body-2, .about-photo, .s-body, .s-service-title, .s-title-line, .s-service-body, .s-section-3, .s-next-body {
         width: 100%;
         min-width: 100%;
         max-width: 100%;
