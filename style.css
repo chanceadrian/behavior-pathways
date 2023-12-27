@@ -637,7 +637,7 @@ article span {
 .s-subtitle, .s-service-subtitle {
     font-size: clamp(19px, 3vw, 24px);
     line-height: clamp(25px, 3vw, 34px);
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 10px;
 }
 
