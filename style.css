@@ -11,6 +11,30 @@ body {
     letter-spacing: .011em;
 }
 
+.youtube-button {
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+    border-radius: 100px;
+    padding-inline: 24px;
+    padding-block: 10px;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 600px;
+    color: black;
+    background: none;
+    align-self: center;
+    margin-top: 32px;
+    width: fit-content;
+    text-decoration: none;
+    line-height: 22px;
+}
+
+.youtube-button img {
+    width: 22px;
+    height: 22px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
@@ -52,11 +76,14 @@ small {
     padding-block: 100px;
     padding-bottom: 32px;
     padding-inline: 15%;
-    background: linear-gradient(180deg, #f7f7f7 0%, #EFF4EE 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #EFF4EE 20%);
     min-width: 1250px;
     justify-self: center;
     width: 100%;
     box-sizing: border-box; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .resources-section a{
@@ -159,7 +186,7 @@ article span {
 
 .grid-2, .grid-3 {
     display: grid;
-    gap: clamp(28px, 2.412868633vw, 44px);
+    gap: clamp(28px, 2.144772118vw, 36px);
     padding-block: clamp(16px, 1.608579088vw, 32px);
     grid-template-columns: 1fr 1fr;
     max-width: 1100px;
@@ -210,7 +237,7 @@ article span {
     
     .grid-2, .grid-3 {
         display: grid;
-        gap: clamp(28px, 2.412868633vw, 44px);
+        gap: clamp(28px, 2.144772118vw, 36px);
         padding-block: clamp(16px, 1.608579088vw, 32px);
         grid-template-columns: 1fr 1fr;
         max-width: 1100px;
@@ -225,7 +252,7 @@ article span {
     
     .grid-2, .grid-3 {
         display: grid;
-        gap: clamp(28px, 2.412868633vw, 44px);
+        gap: clamp(28px, 2.144772118vw, 36px);
         padding-block: clamp(16px, 1.608579088vw, 32px);
         grid-template-columns: 1fr;
         max-width: 1100px;
