@@ -86,13 +86,17 @@ small {
     flex-direction: column;
 }
 
-.resources-section a{
+.resources-section a, .contact-details a{
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
 }
 
 .resources-section a:hover {
     transform: scale(1.02);
+}
+
+.contact-details a:hover {
+    transform: scale(1.1);
 }
 
 article {
@@ -266,6 +270,7 @@ article span {
         width: 100vw;
         min-width: 100vw;
         max-width: 100vw;
+        border-radius: 0;
     }
 }
 
@@ -400,7 +405,7 @@ article span {
     font-size: clamp(56px, 9vw, 140px);
     line-height: clamp(50px, 8vw, 124px);
     font-weight: 600;
-    letter-spacing: -.008em;
+    letter-spacing: -.02em;
     color:white;
     z-index: 2;
     margin-bottom: clamp(16px, 4vw, 96px);
@@ -672,6 +677,10 @@ article span {
     line-height: clamp(25px, 3vw, 34px);
     font-weight: 700;
     padding-bottom: 10px;
+}
+
+.s-subtitle {
+    font-weight: 600;
 }
 
 .s-row, .s-row-2, .s-row-3, .s-row-4 {
