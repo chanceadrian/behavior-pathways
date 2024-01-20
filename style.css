@@ -457,8 +457,8 @@ article span {
 .work-preview {
     border-radius: clamp(16px,4vw, 32px);
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     gap: 3px;
     overflow: hidden;
     margin-top: 24px;
@@ -912,6 +912,11 @@ b {
 
     .title {
         margin-bottom: 64px;
+    }
+
+    .work-preview {
+        display: flex;
+        flex-direction: column;
     }
 
     .work-preview-row, .s-row, .s-row-2, .s-row-3, .s-row-next-1 {
