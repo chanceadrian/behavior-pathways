@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: 'Inter';
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', "system-ui", sans-serif;
     color:#1D1F1D;
     display: flex;
     flex-direction: column;
