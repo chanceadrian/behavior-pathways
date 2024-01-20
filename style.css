@@ -283,8 +283,8 @@ article span {
     background-color: rgb(66, 89, 63, 0.85);
     height: 52px;
     color:white;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     position: fixed;
     width: 100%;
     box-sizing: border-box; 
@@ -333,8 +333,8 @@ article span {
     background-color: rgb(66, 89, 63, 0.85);
     height: 52px;
     color:white;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -597,8 +597,8 @@ article span {
 
 .contact-footer {
     padding: 3%;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255, 255, 255, 0.85);
     z-index: 2;
     border-radius: 16px;
