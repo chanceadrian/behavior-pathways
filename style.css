@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     letter-spacing: .011em;
+    -webkit-font-smoothing: antialiased;
 }
 
 .youtube-button {
@@ -37,6 +38,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
+    text-decoration: none;
+    color: inherit;
 }
 
 h4 {
@@ -76,7 +79,7 @@ small {
     padding-block: 100px;
     padding-bottom: 32px;
     padding-inline: 14%;
-    background: linear-gradient(180deg, #ffffff 0%, #EFF4EE 20%);
+    background: linear-gradient(180deg, #FBFCFA 0%, #EFF4EE 20%);
     min-width: 1250px;
     justify-self: center;
     width: 100%;
@@ -92,11 +95,15 @@ small {
 }
 
 .resources-section a:hover {
-    transform: scale(1.02);
+    transform: scale(1.007);
 }
 
 .contact-details a:hover {
     transform: scale(1.1);
+}
+
+.hide-mobile {
+    display: flex;
 }
 
 article {
@@ -106,16 +113,12 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: clamp(354px, 24.26273458vw, 370px);
     position: relative;
+    height: 362px;
     border-radius: 16px;
     overflow: hidden;
     justify-content: flex-end;
     color: white;
-}
-
-.medium {
-    height: clamp(488px, 33.24396783vw, 504px);
 }
 
 article h1, article h2, article h3, article h4, article h5, article h6, article small {
@@ -146,8 +149,8 @@ article h3 {
     text-overflow: ellipsis;
 }
 
-article h4 {
-    font-size: clamp(16px, 0.9383378016vw, 16px);
+article h4, .blog h4, .blog-small h4 {
+    font-size: clamp(14px, 0.9383378016vw, 14px);
     line-height: 1.28577;
     font-weight: 600;
     letter-spacing: -.016em;
@@ -201,6 +204,7 @@ article span {
 }
 
 @media (max-width: 1030px) {
+
     .resources-section {
         padding-block: 100px;
         padding-inline: 5%;
@@ -880,6 +884,81 @@ b {
     margin-bottom: -10px;
 }
 
+.blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: white;
+    gap: 0;
+    height: 362px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-block: 20px;
+    margin-bottom: 32px;
+    color: black;
+}
+
+.blog-text, .blog-text-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 362px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.blog-text-2 {
+    height: 100%;
+}
+
+.blog small {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    color: #6e6e73;
+}
+
+.blog-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.blog-small {
+    display: grid;
+    grid-template-rows: 1.3fr 1fr;
+    background-color: white;
+    gap: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    color: black;
+}
+
+.blog-small-holder {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog-small img {
+    width: 100%;
+    height: auto;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.blog img {
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 400px) {
     .s-service {
         width: 100vw;
@@ -1029,5 +1108,72 @@ b {
     .icon-2 {
         width: 45px;
         height: 45px;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .blog-small {
+        height: 362px;
+    }
+}
+
+.writing {
+    display: flex;
+    flex-direction: column;
+    padding-inline: clamp(252px, 17.15817694vw, 260px);
+    padding-block: clamp(124px, 8.579088472vw, 132px)
+}
+
+.writing h1 {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 700;
+    letter-spacing: -.003em;
+    width: 90%;
+    align-self: center;
+}
+
+.writing p {
+    font-size: 19px;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: .012em;
+    width: 90%;
+    align-self: center;
+}
+
+.writing img {
+    border-radius: 16px;
+    margin-block: 32px;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .writing {
+        padding-inline: clamp(20px, 1.608579088vw, 28px);
+        padding-block: clamp(92px, 6.434316354vw, 100px);
+    }
+
+    .writing h1 {
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 700;
+        letter-spacing: .004em;
+    }
+
+    .writing p {
+        font-size: 19px;
+        line-height: 1.4211;
+        font-weight: 400;
+        letter-spacing: .012em;
+    }
+    
+    .hide-desktop {
+        display: grid;
     }
 }
