@@ -874,6 +874,12 @@ b {
     margin-top: 16px;
 }
 
+.logo {
+    width: 25%;
+    height: auto;
+    margin-bottom: -10px;
+}
+
 @media (max-width: 400px) {
     .s-service {
         width: 100vw;
@@ -884,6 +890,10 @@ b {
 }
 
 @media (max-width: 1030px) {
+    .logo {
+        width: 65%;
+    }
+
     .s-grid {
         grid-template-columns: 1fr;
     }
