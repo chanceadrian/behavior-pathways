@@ -1123,7 +1123,8 @@ b {
     display: flex;
     flex-direction: column;
     padding-inline: clamp(252px, 17.15817694vw, 260px);
-    padding-block: clamp(124px, 8.579088472vw, 132px)
+    padding-block: clamp(124px, 8.579088472vw, 132px);
+    height:fit-content;
 }
 
 .writing h1 {
@@ -1131,29 +1132,53 @@ b {
     line-height: 1.08349;
     font-weight: 700;
     letter-spacing: -.003em;
-    width: 90%;
+    width: 95%;
     align-self: center;
 }
 
-.writing p {
+.writing p, .writing small {
     font-size: 19px;
     line-height: 1.4211;
     font-weight: 400;
     letter-spacing: .012em;
-    width: 90%;
+    width: 95%;
     align-self: center;
+    margin-bottom: 11px;
+    margin-top: 7px;
+}
+
+.writing .container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 95%;
+    align-self: center;
+}
+
+.writing small {
+    font-size: 17px;
+    width: auto;
 }
 
 .writing img {
     border-radius: 16px;
-    margin-block: 32px;
+    margin-block: 24px;
+    width: 75vw;
+    height: auto;
+    align-self: center;
 }
 
 .hide-desktop {
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1030px) {
+    .writing img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
     .writing {
         padding-inline: clamp(20px, 1.608579088vw, 28px);
         padding-block: clamp(92px, 6.434316354vw, 100px);
