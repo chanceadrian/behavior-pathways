@@ -1280,6 +1280,7 @@ b {
     flex-direction: column;
     justify-content: flex-end;
     padding: 11px;
+    box-sizing: border-box;
 }
 
 .br .profile {
@@ -1338,6 +1339,7 @@ b {
     flex-direction: column;
     justify-content: flex-end;
     padding: 11px;
+    box-sizing: border-box;
 }
 
 .br headline2 {
